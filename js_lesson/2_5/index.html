@@ -7,7 +7,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
   $(function(){
     // ここに処理を記述
-  });
+    $('#button').click(function(){
+        var inputValue = $('#value').val(); 
+        var $box = $('#box'); 
+        
+                if(inputValue === '1') {
+            $box.css('background-color', 'red');
+        } else if(inputValue === '2') {
+            $box.css('background-color', 'lime');
+        } else if(inputValue === '3') {
+            $box.css('background-color', 'blue');
+        }
+    });
+});
   </script>
 </head>
 <body>
